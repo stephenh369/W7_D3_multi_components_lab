@@ -3,7 +3,7 @@
     <h1>Countries</h1>
     <div class="main-container">
       <!-- <countries-list :countries="countries"></countries-list> -->
-      <countries-select :countries="countries"></countries-select>
+      <countries-select :countries="countries"/>
       <country-detail :country="selectedCountry"/>
     </div>
   </div>
