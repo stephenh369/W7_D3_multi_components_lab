@@ -5,6 +5,10 @@
       <p>Population: {{ country.population }}</p>
       <p>Flag:</p>
       <img :src="country.flag">
+      <p>Languages:</p>
+      <ul>
+        <li v-for="(language, index) in country.languages" :language="language" :key="index">{{ language.name }}</li>
+      </ul>
   </div>
 </template>
 
