@@ -1,7 +1,10 @@
 <template>
   <div v-if="country">
       <h3>Country: {{ country.name }}</h3><br>
-      <p>Capital: {{ country.capital }} <br> Population: {{ country.population }}</p>
+      <p>Capital: {{ country.capital }}</p>
+      <p>Population: {{ country.population }}</p>
+      <p>Flag:</p>
+      <img :src="country.flag">
   </div>
 </template>
 
@@ -13,5 +16,8 @@ export default {
 </script>
 
 <style>
-
+  img {
+    width: 125px;
+    height: 100px;
+  }
 </style>
