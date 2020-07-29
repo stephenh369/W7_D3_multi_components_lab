@@ -1,10 +1,14 @@
 <template>
   <div>
     <h1>Countries</h1>
+    <div>
+      <countries-list :countries="countries"></countries-list>
+    </div>
   </div>
 </template>
 
 <script>
+import CountriesList from './components/CountriesList.vue';
 export default {
   name: 'app',
   data() {
@@ -19,7 +23,8 @@ export default {
     .then(countries => this.countries = countries)
   },
   components: {
-
+    "countries-list" : CountriesList,
+    
   }
 }
 </script>
