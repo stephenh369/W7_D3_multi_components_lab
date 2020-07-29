@@ -1,5 +1,6 @@
 <template>
-  <li v-on:click="handleClick" >{{country.name}}</li>
+  <!-- <li v-on:click="handleClick" >{{country.name}}</li> -->
+  <option v-on:click="handleClick">{{country.name}}</option>
 </template>
 
 <script>
